@@ -1,4 +1,10 @@
 /* CSS */
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
 .button-66 {
 	margin: 0 auto;
 	background-color: #0a6bff;
@@ -50,12 +56,17 @@
 }
 .form {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
 .input {
+	margin: 0 auto;
+	overflow-y: hidden;
+	resize: none;
 	text-align: center;
-	width: 360px;
+	width: 460px;
+	height: 100px;
 	background: #fff;
 	font-family: inherit;
 	font-size: 22px;

@@ -25,7 +25,7 @@ const App = () => {
 		setFiltered(filtered);
 	};
 	return (
-		<div>
+		<div className="container">
 			<button className="button-66" onClick={randLetter} type="button">
 				Randomize
 			</button>
@@ -40,6 +40,7 @@ const App = () => {
 			<hr />
 			<form className="form" onSubmit={handleSubmit}>
 				<input
+					style={{ height: 20 }}
 					className="input"
 					type="text"
 					placeholder="enter id"
@@ -54,11 +55,15 @@ const App = () => {
 					<div className="filterWrapper" key={item.id}>
 						<p>
 							<b>Opening name: </b>
-							{item.name}
+							<textarea className="input" defaultValue={item.name}></textarea>
 						</p>
 						<p>
 							<b>FEN: </b>
-							{item.fen}
+							<textarea
+								className="input"
+								style={{ height: 50 }}
+								defaultValue={item.fen}
+							></textarea>
 						</p>
 					</div>
 				);
