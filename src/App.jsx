@@ -55,11 +55,16 @@ const App = () => {
 					<div className="filterWrapper" key={item.id}>
 						<p>
 							<b>Opening name: </b>
-							<textarea className="input" defaultValue={item.name}></textarea>
+							<textarea
+								spellCheck="false"
+								className="input"
+								defaultValue={item.name}
+							></textarea>
 						</p>
 						<p>
 							<b>FEN: </b>
 							<textarea
+								spellCheck="false"
 								className="input"
 								style={{ height: 50 }}
 								defaultValue={item.fen}
