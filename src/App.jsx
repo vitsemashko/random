@@ -41,7 +41,7 @@ const App = () => {
         <input
           className="input"
           type="text"
-          placeholder="Введіть ID (наприклад, A48)"
+          placeholder="Enter ID"
           value={searchValue}
           onChange={(e) => setSearchValue(e.target.value)}
           style={{ padding: '10px', width: '250px', fontSize: '40px' }}
@@ -59,7 +59,7 @@ const App = () => {
                 arePiecesDraggable={false} // Тільки перегляд
               />
             </div>
-            <p style={{ color: 'gray', fontSize: '12px' }}>FEN: {item.fen}</p>
+            <p style={{ color: 'gray', fontSize: '36px' }}>FEN: {item.fen}</p>
           </div>
         ))}
       </div>
